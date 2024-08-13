@@ -30,7 +30,7 @@
     position: absolute;
     font-size: 40px;
     color: white;
-    left: 83%;
+    left: 78%;
     top: 2.5%;
 
     -webkit-user-select: none;
@@ -48,7 +48,7 @@
     font-size: 40px;
     top: 3%;
     left: 3%;
-    width: 300px;
+    width: 15%;
     color: white;
 }
 
@@ -58,7 +58,7 @@
     transform: translate(-50%, -50%);
     top: 52%;
     left: 75%;
-    width: 35%
+    width: 35%;
 }
 
 button{
@@ -66,14 +66,24 @@ button{
 }
 
 
-.home-button{
-    position: relative;
+.home-button-telegram{
+    position: absolute;
     width: 50px;
     height: 50px;
     border-style: solid;
     border-radius: 50%;
-    top: -2.5%;
-    left: 92%;
+    top: 2.5%;
+    left: 91%;
+}
+
+.home-button-whatsapp{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 50%;
+    top: 2.5%;
+    left: 94%;
 }
 
 .button-image{
@@ -193,9 +203,9 @@ button{
     display: inline-grid;
     grid-template-columns: auto auto auto auto auto;
     padding: 10px;
-    grid-gap: 40px;
+    grid-gap: 20px;
     top: 15%;
-    left: 4%;
+    left: 5%;
     width: 90%;
 }
 
@@ -211,7 +221,7 @@ button{
 
 .box-rev{
     position: relative;
-    width: 310px;
+    width: 100%;
     height: 650px;
     border-radius: 50px;
     border-style: solid;
@@ -244,68 +254,68 @@ button{
     font-size: 25px;
 }
 
-.prices{
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.prices-content {
     position: relative;
     background-color: orange;
     width: 100%;
-    height: 40vh;
+    height: 50%;
 }
 
-.prices h1{
+.prices-content h3 {
+    text-align: center;
+}
+
+.prices-content h1 {
     position: relative;
     text-align: center;
     top: 2%;
 }
 
-.price-boxes{
+.price-boxes {
     position: relative;
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     padding: 10px;
-    grid-gap: 5%;
-    top: 5%;
-    left: 3.5%;
+    top: 15%;
+    left: 5%;
     width: 90%;
 }
 
-.price-boxes h3{
-    position: relative;
-    text-align: center;
-    left: 180%;
-}
-
-.price{
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border-radius: 25px;
     border-style: solid;
     height: 250px;
-    width: 370px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-.price h2{
-    text-align: center;
-    position: relative;
-    transform: translate(-50% ,-50%);
+.price h2 {
     font-size: 35px;
-    top: 20%;
-    left: 50%;
-}
-
-
-
-.price h3{
     text-align: center;
-    position: relative;
-    transform: translate(-50% ,-50%);
-    font-size: 25px;
-    top: 25%;
-    left: 50%;
+    margin-bottom: 20%;
 }
 
-.price ul{
-    position: relative;
-    left: 15%;
-    top: 30%;
+.price h3 {
     font-size: 25px;
+    text-align: center;
+}
+
+.price h4 {
+    font-size: 25px;
+    text-align: center;
 }
 
 .contact{
