@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,529;1,529&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    /******************/
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.header{
+    background-color: #02BDF4;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.header h1{
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.header h2{ 
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    left: 83%;
+    top: 2.5%;
+
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.logo{
+    position: relative;
+    font-family: "Great Vibes", cursive;
+    font-style: normal;   
+    font-size: 40px;
+    top: 3%;
+    left: 3%;
+    width: 300px;
+    color: white;
+}
+
+.Yosefa-home{
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 52%;
+    left: 75%;
+    width: 35%
+}
+
+button{
+    cursor: pointer;
+}
+
+
+.home-button{
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 50%;
+    top: -2.5%;
+    left: 92%;
+}
+
+.button-image{
+    position: relative;
+    width: 38px;
+    height: 38px;
+}
+
+.home-text{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 28%;
+    width: 45%;
+    color: white;
+}
+
+.home-text h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+.home-text p{
+    font-size: 35px;
+}
+
+
+.Achievements{
+    position: relative;
+    background-color: #BEF575;
+    width: 100%;
+    height: 110vh;
+}
+
+.Achievements h1{
+    position: relative;
+    text-align: center;
+    top: 3%;
+    font-size: 55px;
+    margin-bottom: 2%;
+}
+
+.sertificate-grid{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    grid-gap: 40px;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+}
+
+.Diploma{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top:50%;
+    left:50%;
+    width: 80%;
+    height: auto;
+    border-style: solid;
+    color: black;
+    border-radius: 10px;
+}
+
+.about-gomeopaty{
+    position: relative;
+    background-color: gray;
+    width: 100%;
+    height: 100vh;
+}
+
+.text-about-gomeopaty{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 73%;
+    width: 40%;
+    height: auto;
+}
+
+.text-about-gomeopaty h1{
+    font-size: 45px;
+    text-indent: 20px;
+    margin: 20px;
+}
+
+.text-about-gomeopaty p{
+    font-size: 30px;
+}
+
+.image-about{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 25%;
+    width: 40%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.reviews{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+}
+
+.reviews h1{
+    position: relative;
+    text-align: center;
+    top: 3%;
+}
+
+.reviews-grid{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 10px;
+    grid-gap: 40px;
+    top: 15%;
+    left: 4%;
+    width: 90%;
+}
+
+.img-rev{
+    position: absolute;
+    width: 35%;
+    height: auto;
+    border-radius: 50%;
+    border-style: solid;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
+
+.box-rev{
+    position: relative;
+    width: 310px;
+    height: 650px;
+    border-radius: 50px;
+    border-style: solid;
+}
+
+.box-rev h1{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 13%;
+    left: 50%;
+    text-align: center;
+    font-size: 23px;
+}
+
+.box-rev p{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 58%;
+    left: 50%;
+    font-size: 20px;
+}
+
+.box-rev a{
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 90%;
+    left: 20%;
+    font-size: 25px;
+}
+
+.prices{
+    position: relative;
+    background-color: orange;
+    width: 100%;
+    height: 40vh;
+}
+
+.prices h1{
+    position: relative;
+    text-align: center;
+    top: 2%;
+}
+
+.price-boxes{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 10px;
+    grid-gap: 5%;
+    top: 5%;
+    left: 3.5%;
+    width: 90%;
+}
+
+.price-boxes h3{
+    position: relative;
+    text-align: center;
+    left: 180%;
+}
+
+.price{
+    border-radius: 25px;
+    border-style: solid;
+    height: 250px;
+    width: 370px;
+}
+
+.price h2{
+    text-align: center;
+    position: relative;
+    transform: translate(-50% ,-50%);
+    font-size: 35px;
+    top: 20%;
+    left: 50%;
+}
+
+
+
+.price h3{
+    text-align: center;
+    position: relative;
+    transform: translate(-50% ,-50%);
+    font-size: 25px;
+    top: 25%;
+    left: 50%;
+}
+
+.price ul{
+    position: relative;
+    left: 15%;
+    top: 30%;
+    font-size: 25px;
+}
+
+.contact{
+    position: relative;
+    background-image: url(Images/For-page/Contact.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.text-contact{
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    align-self: center;
+    justify-self: center;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.500);
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.text-contact a{
+    text-decoration: none;
+    margin: 2%;
+}
+
+.text-contact h1{
+    color: white;
+    margin: 15px;
+}
+
+.text-contact h3{
+    margin: 2%;
+    color: white;
+    font-size: 30px;
+}
+
+.text-contact h3{
+    color: white;
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 25px;
+  }
+
+  input[type=tel], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    color: black;
+    font-size: 25px;
+  }
+
+  input[type=submit] {
+    width: 80%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 0px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+
+
+  footer{
+    text-align: center;
+    background-color: black;
+    height: 3lvh;
+    font-size: 20px;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 530;
+    font-style: normal;
+  }
+
+  footer a{
+    margin-top: 1px;
+    color: #00FF00;
+    padding: 5px;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 530;
+    font-style: normal;
+  }
+
+  footer h5{
+    margin-top: 1px;
+    color: #00FF00;
+    padding: 1px;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 530;
+    font-style: normal;
+  }
