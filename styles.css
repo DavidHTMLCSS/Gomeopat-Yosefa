@@ -155,7 +155,7 @@ button{
 
 .about-gomeopaty{
     position: relative;
-    background-color: gray;
+    background-color: #FFB2C6;
     width: 100%;
     height: 100vh;
 }
@@ -189,73 +189,57 @@ button{
     border-radius: 50px;
 }
 
-.reviews{
-    position: relative;
+.reviews {
     background-color: white;
-    width: 100%;
-    height: 100vh;
-}
-
-.reviews h1{
-    position: relative;
+    padding: 20px;
     text-align: center;
-    top: 3%;
 }
 
-.reviews-grid{
-    position: relative;
-    display: inline-grid;
-    grid-template-columns: auto auto auto auto auto;
-    padding: 10px;
-    grid-gap: 20px;
-    top: 15%;
-    left: 5%;
-    width: 90%;
+.reviews h1 {
+    margin-bottom: 20px;
 }
 
-.img-rev{
-    position: absolute;
-    width: 35%;
-    height: auto;
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.box-rev {
+    border-style: solid;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-rev {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border-style: solid;
-    transform: translate(-50%, -50%);
-    left: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
 }
 
-.box-rev{
-    position: relative;
-    width: 100%;
-    height: 650px;
-    border-radius: 50px;
-    border-style: solid;
+.box-rev h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.box-rev h1{
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 13%;
-    left: 50%;
-    text-align: center;
+.box-rev p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+.box-rev a {
     font-size: 23px;
-}
-
-.box-rev p{
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 58%;
-    left: 50%;
-    font-size: 20px;
-}
-
-.box-rev a{
-    position: relative;
-    transform: translate(-50%, -50%);
-    top: 90%;
-    left: 20%;
-    font-size: 25px;
+    color: #007bff;
+    text-decoration: underline;
 }
 
 .prices-content {
@@ -556,8 +540,26 @@ input[type=text], select {
 
     /*************************/
 
-    .reviews{
-    display: none;
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .box-rev {
+        padding: 15px;
+    }
+
+    .img-rev {
+        width: 80px;
+        height: 80px;
+    }
+
+    .box-rev h1 {
+        font-size: 20px;
+    }
+
+    .box-rev p {
+        font-size: 16px;
     }
 
     /*************************/
@@ -648,7 +650,220 @@ input[type=text], select {
     
       footer h5{
         font-size: 60%;
+      }    
+}
+
+    /*************************/ /*************************/ /*************************/
+    /*************************/ /*************************/ /*************************/
+
+@media only screen and (min-width: 767px) and (max-width: 1080px) {
+    .header{
+        width: 100%;
+        height: 1800px;
+    }
+
+    .header h2{ 
+        display: none;
+    }
+
+    .header h1{
+        left: 5%;
+        font-size: 50px;
+        width: 400px;
+    }
+
+    .Yosefa-home{
+        top: 70%;
+        left: 50%;
+        width: 80%;
+    }
+
+    .home-text{
+        top: 30%;
+        left: 50%;
+        width: 80%;
+        color: white;
+    }
+    
+    .home-text h1{
+        width: 100%;
+        font-size: 45px;
+        margin-bottom: 25px;
+    }
+    
+    .home-text p{
+        font-size: 38px;
+    }
+
+    .home-button-telegram{
+        position:relative;
+        width: 80px;
+        height: 80px;
+        top: 0;
+        left: 72.5%;
+    }
+    
+    .home-button-whatsapp{
+        position:relative;
+        width: 80px;
+        height: 80px;
+        top: 0;
+        left: 75%;
+    }
+    
+    .button-image{
+        position: relative;
+        width: 70px;
+        height: 70px;
+    }
+
+    /*****************************/
+
+    .Achievements{
+        height: 185lvh;
+    }
+    
+    .Achievements h1{
+        font-size: 55px;
+    }
+    
+    .sertificate-grid{
+        grid-template-columns:  auto auto;
+        padding: 5px;
+        grid-gap: 10px;
+        width: 90%;
+    }
+
+    /*****************************/
+
+    .about-gomeopaty{
+        height: 125lvh;
+    }
+
+    .text-about-gomeopaty{
+        top: 30%;
+        left: 50%;
+        width: 85%;
+    }
+    
+    .text-about-gomeopaty h1{
+        font-size: 45px;
+        text-align: center;
+        margin-bottom: 15%;
+    }
+    
+    .text-about-gomeopaty p{
+        font-size: 38px;
+    }
+    
+    .image-about{
+        top: 80%;
+        left: 50%;
+        width: 85%;
+    }
+
+    /*****************************/
+
+    .reviews-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .box-rev {
+        padding: 20px;
+    }
+
+    .img-rev {
+        width: 90px;
+        height: 90px;
+    }
+
+    .box-rev h1 {
+        font-size: 22px;
+    }
+
+    .box-rev p {
+        font-size: 18px;
+    }
+
+    /*****************************/
+
+    .price-boxes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+    .price-box {
+        width: 100%;
+        margin-bottom: 15px;
+        text-align: center; 
+    }
+
+    .price {
+        width: 100%; 
+        box-sizing: border-box; 
+        padding: 10px;
+        margin-bottom: 10px; 
+        text-align: center; 
+    }
+
+    .price h2, .price h4 {
+        margin: 5px 0; 
+    }
+
+    .price-box h2, 
+    .price-box p {
+        margin: 10px 0; 
+    }
+
+    .price-box img {
+        width: 100%; 
+        height: auto;
+    }
+
+    /*****************************/
+
+    .text-contact{
+        width: 90%;
+    }
+
+    input[type=text], select {
+        width: 80%;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        box-sizing: border-box;
+        color: black;
+        font-size: 25px;
       }
     
+      input[type=tel], select {
+        width: 80%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 25px;
+        box-sizing: border-box;
+        color: black;
+        font-size: 25px;
+      }
     
+      input[type=submit] {
+        width: 80%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 0px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 25px;
+        cursor: pointer;
+        font-size: 25px;
+      }
+      
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }
+
 }
